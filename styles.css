@@ -1,0 +1,424 @@
+.login-Form {
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 45%;
+  height: 500px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  border-radius: 25px;
+  border: 2px solid black;
+  margin-left: 380px;
+  margin-top: 50px;
+}
+.login-Form #login-tittle {
+  padding-top: 20px;
+}
+.login-Form .form-floating {
+  transition: all 0.8s ease-in-out;
+}
+.login-Form .login {
+  padding-top: 20px;
+  margin-right: 50px;
+  margin-left: -20px;
+}
+.login-Form #login-btn {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
+  color: white;
+  font-weight: 500;
+  border-radius: 15px;
+  width: 80px;
+  height: 30px;
+  margin-left: -25px;
+  border-radius: 5px;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.6), -4px -4px 5px 0px rgba(255, 255, 255, 0.6), 7px 7px 20px 0px rgba(0, 0, 0, 0.1333333333), 4px 4px 5px 0px rgba(0, 0, 0, 0.0666666667);
+  transition: all 0.3s ease;
+}
+.login-Form #login-btn:hover {
+  color: #fff;
+  background: rgb(54, 96, 112);
+}
+.login-Form .ripple {
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(235, 9, 9, 0.6);
+  transform: scale(0);
+  animation: ripple-animation 0.6s linear;
+}
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+.login-Form #login-btn:hover:after {
+  top: 0;
+  height: 100%;
+}
+.login-Form .register {
+  display: inline-flex;
+  margin-top: -30px;
+  position: absolute;
+  margin-right: -290px;
+}
+.login-Form .facebookIconLog {
+  display: flex;
+  position: absolute;
+  margin-top: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.login-Form .platformName {
+  position: absolute;
+  bottom: -30px;
+  font-size: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+.login-Form .facebookIconLog:hover .platformName {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(25px) translateY(-25px);
+}
+.login-Form .twitterIconLog {
+  display: flex;
+  position: absolute;
+  margin-top: 60px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.login-Form .platformName {
+  position: absolute;
+  bottom: -30px;
+  font-size: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+.login-Form .twitterIconLog:hover .platformName {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(25px) translateY(-25px);
+}
+.login-Form .instagramIconLog {
+  display: flex;
+  position: absolute;
+  margin-left: 160px;
+  font-size: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.login-Form .platformName {
+  position: absolute;
+  bottom: -30px;
+  font-size: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+.login-Form .instagramIconLog:hover .platformName {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-130px) translateY(-25px);
+}
+.login-Form .linkedinIconLog {
+  display: flex;
+  position: absolute;
+  margin-left: 160px;
+  font-size: 30px;
+  margin-top: 60px;
+  cursor: pointer;
+}
+.login-Form .platformName {
+  position: absolute;
+  bottom: -30px;
+  font-size: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+.login-Form .linkedinIconLog:hover .platformName {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-130px) translateY(-25px);
+}
+
+.register-Form {
+  background-color: #f5f5f5;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 45%;
+  height: 630px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  border-radius: 25px;
+  border: 2px solid black;
+  margin-left: 380px;
+  margin-top: -500px;
+}
+.register-Form .register-btn {
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 15px;
+  width: 80px;
+  margin-left: -100px;
+  padding: 5px;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.6), -4px -4px 5px 0px rgba(255, 255, 255, 0.6), 7px 7px 20px 0px rgba(0, 0, 0, 0.1333333333), 4px 4px 5px 0px rgba(0, 0, 0, 0.0666666667);
+  transition: all 0.3s ease;
+}
+.register-Form .ripple {
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(235, 9, 9, 0.6);
+  transform: scale(0);
+  animation: ripple-animation 0.6s linear;
+}
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+.register-Form .register-btn:hover {
+  color: #fff;
+  background: rgb(54, 96, 112);
+}
+.register-Form .register-btn:hover:after {
+  top: 0;
+  height: 100%;
+}
+.register-Form .register {
+  display: inline-flex;
+  margin-top: -30px;
+  position: absolute;
+  margin-right: -290px;
+}
+.register-Form .alert-reg {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.register-Form .alert-content {
+  background-color: #000000;
+  color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  width: 80%;
+  animation: slideIn 0.5s;
+}
+.register-Form .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.register-Form .close:hover,
+.register-Form .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.register-Form .facebookIconReg {
+  display: flex;
+  position: absolute;
+  margin-top: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.register-Form .platformName {
+  position: absolute;
+  bottom: -30px;
+  font-size: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+.register-Form .facebookIconReg:hover .platformName {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(25px) translateY(-25px);
+}
+.register-Form .twitterIconReg {
+  display: flex;
+  position: absolute;
+  margin-top: 60px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.register-Form .platformName {
+  position: absolute;
+  bottom: -30px;
+  font-size: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+.register-Form .twitterIconReg:hover .platformName {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(25px) translateY(-25px);
+}
+.register-Form .instagramIconReg {
+  display: flex;
+  position: absolute;
+  margin-left: 160px;
+  font-size: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.register-Form .platformName {
+  position: absolute;
+  bottom: -30px;
+  font-size: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+.register-Form .instagramIconReg:hover .platformName {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-130px) translateY(-25px);
+}
+.register-Form .linkedinIconReg {
+  display: flex;
+  position: absolute;
+  margin-left: 160px;
+  font-size: 30px;
+  margin-top: 60px;
+  cursor: pointer;
+}
+.register-Form .platformName {
+  position: absolute;
+  bottom: -30px;
+  font-size: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+.register-Form .linkedinIconReg:hover .platformName {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-130px) translateY(-25px);
+}
+.register-Form .login-switch {
+  display: inline-flex;
+  margin-top: -30px;
+  position: absolute;
+}
+.register-Form #phone-Reg {
+  margin-bottom: 20px;
+}
+.register-Form .form-floating {
+  transition: all 0.8s ease-in-out;
+}
+
+.otherPageDiv {
+  background-color: #f5f5f5;
+  margin: 30px 0;
+  padding: 35px;
+  border: 1px solid #ddd;
+  height: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.otherPageDiv.active {
+  max-height: 1000px;
+  height: 85px;
+}/*# sourceMappingURL=styles.css.map */

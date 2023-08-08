@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.css" />
+    <script
+      src="https://kit.fontawesome.com/74596f2d64.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      -
+      <div class="login-Form">
+        <h2 id="login-tittle">Login</h2>
+
+        <form>
+          <div class="form-floating mb-3 mt-3">
+            <input
+              type="text"
+              class="form-control"
+              name="username"
+              id="floatingInput"
+              placeholder="Username"
+            />
+            <label for="username">Username</label>
+          </div>
+
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="password"
+            />
+            <label for="password">Password</label>
+          </div>
+
+          <div class="login">
+            <button id="login-btn">Login</button>
+          </div>
+
+          <div class="register">
+            <p><b>Register</b></p>
+          </div>
+
+          <div class="socialmedia">
+            <div class="facebookIconLog">
+              <i class="fa-brands fa-facebook"></i>
+
+              <div class="platformName">Facebook</div>
+            </div>
+
+            <div class="twitterIconLog">
+              <i class="fa-brands fa-x-twitter"></i>
+
+              <div class="platformName">Twitter</div>
+            </div>
+
+            <div class="instagramIconLog">
+              <i class="fa-brands fa-instagram"></i>
+
+              <div class="platformName">Instagram</div>
+            </div>
+
+            <div class="linkedinIconLog">
+              <i class="fa-brands fa-linkedin"></i>
+
+              <div class="platformName">Linkedin</div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="containerRegister-fluid">
+      <div class="register-Form">
+        <h4>Register</h4>
+
+        <form>
+          <div class="form-floating mb-3 mt-3">
+            <input
+              type="text"
+              class="form-control"
+              id="username-Reg"
+              placeholder="Username"
+              name="username"
+              required
+            />
+            <label for="username">Username</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="password-Reg"
+              placeholder="password"
+            />
+            <label for="password">Password</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="email-Reg"
+              placeholder="email"
+              name="email"
+            />
+            <label for="phone">Email</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input
+              type="phone"
+              class="form-control"
+              id="phone-Reg"
+              placeholder="phone"
+              name="phone"
+            />
+            <label for="phone">Phone Number</label>
+          </div>
+
+          <button class="register-btn">Register</button>
+
+          <div id="showAlert" class="alert-reg">
+            <div class="alert-content">
+              <span class="close">&times;</span>
+              <p>Successfully registered!</p>
+            </div>
+          </div>
+
+          <div class="socialmedia">
+            <div class="facebookIconReg">
+              <i class="fa-brands fa-facebook"></i>
+
+              <div class="platformName">Facebook</div>
+            </div>
+
+            <div class="twitterIconReg">
+              <i class="fa-brands fa-x-twitter"></i>
+
+              <div class="platformName">Twitter</div>
+            </div>
+
+            <div class="instagramIconReg">
+              <i class="fa-brands fa-instagram"></i>
+
+              <div class="platformName">Instagram</div>
+            </div>
+
+            <div class="linkedinIconReg">
+              <i class="fa-brands fa-linkedin"></i>
+
+              <div class="platformName">Linkedin</div>
+            </div>
+          </div>
+
+          <div>
+            <p class="login-switch"><b>Login</b></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
